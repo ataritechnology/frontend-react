@@ -7,6 +7,7 @@ import "font-awesome/css/font-awesome.min.css";
 import "./App.css";
 
 const Login = lazy(() => import("./views/login/index"));
+const PatientModule = lazy(() => import("./views/patientModule/index"));
 
 class App extends Component {
   render() {
@@ -24,6 +25,14 @@ class App extends Component {
             path="/"
             render={(props) => (
               <Login {...props} cookies={this.props.cookies} />
+            )}
+          />
+
+          <Route
+            exact
+            path="/patientModule"
+            render={(props) => (
+              <PatientModule {...props} cookies={this.props.cookies} />
             )}
           />
         </Suspense>

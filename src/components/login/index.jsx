@@ -7,6 +7,7 @@ class LoginWrapper extends Component {
     super(props);
     this.state = {};
   }
+
   render() {
     return (
       <div className="app flex-row align-items-center">

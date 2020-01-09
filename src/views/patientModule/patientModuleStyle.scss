@@ -1,0 +1,106 @@
+.headerLine {
+    width: 100%;
+    text-align: left;
+    border-bottom: 1px solid #dadade;
+    position: relative;
+    margin-bottom: 50px;
+}
+
+.headerLine::before {
+    width: 60px;
+    content: "";
+    height: 2px;
+    background: #4267b2;
+    position: absolute;
+    z-index: 55;
+    bottom: -1px;
+}
+
+.patientActiveStyle {
+    color: #4267b2;
+    font-weight: 600;
+
+}
+
+.nav-tabs .nav-item.show .nav-link,
+.nav-tabs .nav-link.active {
+    border-color: #1E73BE #1E73BE #fff !important;
+}
+
+.progress_step {
+    background-color: #4267b2;
+    height: 7px;
+    margin-top: 10px;
+    border-radius: 10px;
+}
+
+.input-group {
+    position: relative;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: stretch;
+    width: 100%;
+}
+
+.input-group-prepend {
+    white-space: nowrap;
+    vertical-align: middle;
+}
+
+.input-group-text {
+    display: flex;
+    align-items: center;
+    padding: 0.375rem 0.75rem;
+    margin-bottom: 0;
+    font-size: 0.875rem;
+    font-weight: 400;
+    line-height: 1.5;
+    color: #3e515b;
+    text-align: center;
+    white-space: nowrap;
+    background-color: #f0f3f5;
+    border: 1px solid #c2cfd6;
+}
+
+.datepickerInput {
+    display: block;
+    height: calc(1.5em + 0.75rem + 2px);
+    padding: 0.375rem 0.75rem;
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 1.5;
+    color: #495057;
+    background-color: #fff;
+    background-clip: padding-box;
+    border: 1px solid #ced4da;
+    border-radius: 0.25rem;
+    transition: border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+}
+
+//css file
+.customDatePickerWidth,
+.customDatePickerWidth>div.react-datepicker-wrapper,
+.customDatePickerWidth>div>div.react-datepicker__input-container .customDatePickerWidth>div>div.react-datepicker__input-container input {
+    width: 100%;
+    height: 100%;
+}
+
+.react-datepicker__input-container {
+    width: inherit;
+    height: inherit;
+}
+
+.react-datepicker__input-container input {
+    width: inherit;
+    height: 100%;
+}
+
+.react-datepicker-wrapper {
+    width: 100%;
+}
+
+.nav-tabs .nav-link:focus,
+.nav-tabs .nav-link:hover {
+    border-color: #fff;
+    cursor: pointer;
+}
